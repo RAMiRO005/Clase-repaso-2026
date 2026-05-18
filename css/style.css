@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -7,7 +7,7 @@ html{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Arimo", sans-serif;
 }
 
 
@@ -232,65 +232,90 @@ input , textarea{
 }
 
 
-@media (max-width: 900px){
+@media (max-width:900px) {
 
     .titulo_principal{
         font-size: 32px;
     }
+
     .titulo_secundario{
         font-size: 24px;
     }
+
     .fondo_titulo{
         height: auto;
-        width: 20px;
+        padding: 15px 0;
     }
+
     .formulario{
         width: 90%;
     }
-    .contenedor_galery{
+
+    .contenedor_galery {
         width: 90%;
     }
-    .gallery{
 
+    .galery {
         margin: 10px auto;
     }
-    .cinco{
-        grid-column: 1 / 13;
+
+    .galery img {
+        height: 300px;
     }
 
-    .seis{
-        grid-row:  2 / 3;
-        grid-column: 9 / 13;
+    .cinco {
+        grid-column: 1/13;
+        grid-row: 3/4;
     }
+
+    .seis {
+        grid-column: 9/13;
+        grid-row: 2/3;
+
+    }
+
 }
 
-@media (max-width: 768px){
-    
+
+@media (max-width: 768px) {
+
     .titulo_principal{
         font-size: 24px;
     }
+
     .titulo_secundario{
-        font-size: 14px;
+        font-size: 18px;
     }
+
     .fondo_titulo{
-        height: 20vh;
+        height: 30vh;
+        
     }
+
     .formulario{
         width: 100%;
     }
+
     footer{
         flex-direction: column;
         align-items: center;
-        
+        text-align: center;
+        gap:25px;
+        padding: 30px 0;
     }
-    .gallery{
+
+
+
+    .galery {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(6, 1fr);
         gap: 10px;
     }
-    .gallery img{
+
+    .galery img {
         height: 200px;
     }
+
     .uno, .dos, .tres, .cuatro, .cinco, .seis{
         grid-column: 1/13;
     }
