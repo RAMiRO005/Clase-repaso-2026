@@ -1,12 +1,15 @@
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+
 
 body{
     background-color: #f2f2f2;
@@ -230,6 +233,20 @@ input , textarea{
 
 
 @media (max-width: 900px){
+
+    .titulo_principal{
+        font-size: 32px;
+    }
+    .titulo_secundario{
+        font-size: 24px;
+    }
+    .fondo_titulo{
+        height: auto;
+        width: 20px;
+    }
+    .formulario{
+        width: 90%;
+    }
     .contenedor_galery{
         width: 90%;
     }
@@ -248,6 +265,24 @@ input , textarea{
 }
 
 @media (max-width: 768px){
+    
+    .titulo_principal{
+        font-size: 24px;
+    }
+    .titulo_secundario{
+        font-size: 14px;
+    }
+    .fondo_titulo{
+        height: 20vh;
+    }
+    .formulario{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        
+    }
     .gallery{
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(6, 1fr);
