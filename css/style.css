@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
 :root{
 
-    --letra_pagina:"Mulish", sans-serif;
+    --letra_pagina:"Arimo", sans-serif;;
 
     --color_fondo:#f2f2f2;
     --color_letra_pagina: #000;
